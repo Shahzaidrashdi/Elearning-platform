@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.instructor-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+}
+
+/* Upload Container */
+.upload-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.upload-container h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.upload-container h2 i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+/* Form Styles */
+.upload-form .form-group {
+    margin-bottom: 25px;
+}
+
+.upload-form label {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.upload-form .form-control {
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+.upload-form .form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* File Upload Styles */
+.file-upload {
+    margin-top: 30px;
+}
+
+.upload-area {
+    border: 2px dashed #bdc3c7;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.upload-area:hover {
+    border-color: #3498db;
+    background-color: #f8f9fa;
+}
+
+.upload-area.dragover {
+    border-color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.05);
+}
+
+.upload-area i {
+    font-size: 48px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.upload-area p {
+    margin-bottom: 0;
+    color: #7f8c8d;
+}
+
+.upload-area input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.file-info p {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Button Styles */
+.btn-upload {
+    padding: 12px 25px;
+    font-weight: 500;
+    background-color: #3498db;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-upload:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-upload i {
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .upload-container {
+        padding: 20px;
+    }
+    
+    .upload-area {
+        padding: 30px 15px;
+    }
+    
+    .instructor-dashboard {
+        flex-direction: column;
+    }
+}
